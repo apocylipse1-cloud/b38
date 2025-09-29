@@ -163,7 +163,7 @@ const WhyUsSection = () => {
                   element.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               }}
-              className='btn-pill btn-primary h-12 sm:h-16 lg:h-20 px-8 sm:px-12 lg:px-16 inline-flex items-center justify-center group'
+             className='btn-pill btn-primary h-12 sm:h-16 lg:h-20 px-8 sm:px-12 lg:px-16 inline-flex items-center justify-center group cursor-pointer'
             >
               <span className='font-[font2] text-base sm:text-xl lg:text-2xl'>
                 Request a Quote
