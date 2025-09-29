@@ -243,18 +243,18 @@ const Header = () => {
                   {item.href.startsWith('#') ? (
                     <button
                       onClick={(e) => handleSmoothScroll(e, item.href)}
-                      className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group cursor-pointer"
+                     className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group cursor-pointer transition-colors duration-200 ease-out hover:text-gray-200"
                     >
                       {item.name}
-                      <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full pointer-events-none" />
+                     <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-200 ease-out group-hover:w-full pointer-events-none will-change-transform" />
                     </button>
                   ) : (
                     <Link
                       to={item.href}
-                      className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group cursor-pointer"
+                     className="nav-link font-[font2] text-sm lg:text-base xl:text-lg text-white uppercase tracking-wide relative group cursor-pointer transition-colors duration-200 ease-out hover:text-gray-200"
                     >
                       {item.name}
-                      <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 ease-out group-hover:w-full pointer-events-none" />
+                     <span className="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-200 ease-out group-hover:w-full pointer-events-none will-change-transform" />
                     </Link>
                   )}
                 </div>
@@ -264,7 +264,7 @@ const Header = () => {
               <div className="nav-item-animate">
                 <Link
                   to="/affiliate-program"
-                  className="affiliate-btn font-[font2] text-xs lg:text-sm xl:text-base text-white uppercase tracking-wide px-4 lg:px-6 py-2 lg:py-3 border border-gray-400 rounded-full transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:shadow-white/10 active:scale-95"
+                 className="affiliate-btn font-[font2] text-xs lg:text-sm xl:text-base text-white uppercase tracking-wide px-4 lg:px-6 py-2 lg:py-3 border border-gray-400 rounded-full transition-all duration-200 ease-out hover:bg-white/10 hover:border-white hover:shadow-lg hover:shadow-white/10 active:scale-95 will-change-transform"
                 >
                   Become an Affiliate
                 </Link>
